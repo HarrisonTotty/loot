@@ -1,0 +1,309 @@
+# Example Loot Configuration File
+# -------------------------------
+
+# Whether a piece of jewelry has a gem
+has_gem:
+  - name: "without gem"
+    weight: 2
+  - "with gem"
+
+# Weapon/Armor Quality Rolls
+quality:
+  - name: "shoddy quality"
+    weight: 6
+  - name: "mundane quality"
+    weight: 7
+  - name: "fine quality"
+    weight: 6
+  - name: "remarkable quality"
+    weight: 5
+  - name: "grand quality"
+    weight: 4
+  - name: "superior quality"
+    weight: 3
+  - name: "imperial quality"
+    weight: 2
+  - "flawless quality"
+
+# ---------- Root Loot Table ----------
+loot:
+  # ----- Miscellaneous Goods -----
+  - name: "misc"
+    weight: 6
+    loot:
+      - "A pouch filled with 2d100 ball bearings"
+      - "1d10 ft of string"
+      - "A small bell"
+      - "A pack of 1d6 candles"
+      - "A crowbar"
+      - "A hammer"
+      - "A pickaxe"
+      - "A pack of 1d10 pitons"
+      - "A lantern"
+      - "1d4 flasks of oil"
+      - name: "1d6 days of rations"
+        weight: 10
+      - "A yinderbox"
+      - "A waterskin"
+      - "1d20 feet of hempen rope"
+      - "1d20 feet of chain"
+      - "A set of fine clothes"
+      - "A bottle of ink"
+      - "An ink pen"
+      - "A lamp"
+      - "1d20 sheets of paper"
+      - "A vial of perfume"
+      - "A bar of soap"
+      - "A backpack"
+      - "A set of 1d4 torches"
+      - "A bedroll"
+      - "A mess kit"
+      - "A warm blanket"
+      - "An alms box"
+      - "1d4 blocks of incense"
+      - "A set of vestments"
+      - "A generic book"
+      - "A small bag of sand"
+      - "A small knife"
+      - "A set of alchemist's supplies"
+      - "A set of brewer's supplies"
+      - "A set of calligrapher's supplies"
+      - "A set of cobbler's tools"
+      - "A set of cook's utensils"
+      - "A set of glassblower's tools"
+      - "A set of jeweler's tools"
+      - "A set of leatherworker's tools"
+      - "A set of mason's tools"
+      - "A set of painter's supplies"
+      - "A set of potter's tools"
+      - "A set of smith's tools"
+      - "A set of tinker's tools"
+      - "A set of weaver's supplies"
+      - "A set of woodcarver's tools"
+      - "A disguise kit"
+      - "A forgery kit"
+      - "A set of dice"
+      - "A set of playing cards"
+      - "A herbalism kit"
+      - "A set of navigator's tools"
+      - "A poisoner's kit"
+      - "A set of thieves' tools"
+      - "1d8 pounds of wheat"
+      - "1d8 pounds of flour"
+      - "1d8 pounds of salt"
+      - "1d8 pounds of iron ore"
+      - "1d8 pounds of copper ore"
+      - "1d8 pounds of ginger"
+      - "1d8 pounds of cinnamon"
+      - "1d8 pounds of pepper"
+      - "1d8 pounds of garlic"
+      - "1d8 pounds of silver ore"
+      - "1d10 large nails"
+      - "An abacus"
+      - "A vial of acid"
+      - "A flask of alchemist's fire"
+      - "A vial of antitoxin"
+      - "A block and tackle"
+      - "A bag containing 1d10 caltrops"
+      - "1d4 pieces of chalk"
+      - "A climber's kit"
+      - "A healer's kit"
+      - "A hunting trap"
+      - "A small flask of holy water"
+      - "A magnifying glass"
+      - "A tent"
+      - "A whetstone"
+      - "A lock"
+      - "A sledge hammer"
+      - "An hourglass"
+      - "An empty sack"
+      - "A whistle"
+      - "A fishing tackle"
+      - "A set of manacles"
+      - "A merchant's scale"
+      - "A spyglass"
+      - "1d8 pounds of gold ore"
+
+  # ----- Coins -----
+  - name: "coins"
+    weight: 5
+    loot:
+      - name: "Gold Coins (1d4)"
+        weight: 2
+      - name: "Gold Coins (1d6 + 1)"
+        weight: 3
+      - name: "Gold Coins (1d8 + 2)"
+        weight: 4
+      - name: "Gold Coins (1d10 + 4)"
+        weight: 4
+      - name: "Gold Coins (1d12 + 7)"
+        weight: 3
+      - name: "Gold Coins (1d20 + 11)"
+        weight: 2
+      - "Gold Coins (2d20 + 16)"
+      - "Gold Coins (3d20 + 22)"
+
+  # ----- Scrolls -----
+  - name: "scroll"
+    weight: 3
+    loot:
+      - "A scroll of Amnesia"
+      - "A scroll of Blinking"
+      - "A scroll of Branding"
+      - "A scroll of Curse Item"
+      - "A scroll of Enchant Item"
+      - "A scroll of Fear"
+      - "A scroll of Fog"
+      - "A scroll of Healing"
+      - "A scroll of Holy Word"
+      - "A scroll of Identification"
+      - "A scroll of Immolation"
+      - "A scroll of Mapping"
+      - "A scroll of Noise"
+      - "A scroll of Chaos"
+      - "A scroll of Recharging"
+      - "A scroll of Remove Curse"
+      - "A scroll of Silence"
+      - "A scroll of Teleportation"
+      - "A scroll of Torment"
+      - "A scroll of Recall"
+
+  # ----- Potions -----
+  - name: "potion"
+    weight: 4
+    loot:
+      - "A potion of Agility"
+      - "A potion of Ambrosia"
+      - "A potion of Life Blood"
+      - "A potion of Brilliance"
+      - "A potion of Cancellation"
+      - "A potion of Charisma"
+      - "A potion of Confusion"
+      - "A potion of Curing"
+      - "A potion of Vision"
+      - "A potion of Decay"
+      - "A potion of Degeneration"
+      - "A potion of Endurance"
+      - "A potion of Flight"
+      - "A potion of Haste"
+      - "A potion of Heal Wounds"
+      - "A potion of Hightened Senses"
+      - "A potion of Initiation"
+      - "A potion of Invisibility"
+      - "A potion of Might"
+      - "A potion of Poison"
+
+  # ----- Armor -----
+  - name: "armor"
+    weight: 3
+    types: quality
+    loot:
+      - name: "A set of cloth armor"
+        weight: 3
+      - name: "A set of padded armor"
+        weight: 3
+      - name: "A set of studded leather armor"
+        weight: 2
+      - name: "A set of hide armor"
+        weight: 2
+      - name: "A chainmail shirt"
+        weight: 2
+      - "A set of scale mail armor"
+      - "A breastplate"
+      - "A set of half-plate armor"
+      - "A set of ring mail armor"
+      - "A set of chain mail armor"
+      - "A set of splint armor"
+      - "A set of plate armor"
+      - name: "A sheild"
+        weight: 2
+      - name: "A buckler"
+        weight: 3
+      - "A greatshield"
+
+  # ----- Weapons -----
+  - name: "weapon"
+    weight: 4
+    types: quality
+    loot:
+      - "A club"
+      - "A dagger"
+      - "A greatclub"
+      - "A handaxe"
+      - "A javelin"
+      - "A light hammer"
+      - "A mace"
+      - "A quarterstaff"
+      - "A sickle"
+      - "A spear"
+      - "A light crossbow with (1d12 - 2) bolts"
+      - "A shortbow with (1d12 - 2) arrows"
+      - "A sling with (1d12 - 2) bullets"
+      - "A battleaxe"
+      - "A flail"
+      - "A glaive"
+      - "A greataxe"
+      - "A greatsword"
+      - "A halberd"
+      - "A lance"
+      - "A longsword"
+      - "A maul"
+      - "A morningstar"
+      - "A pike"
+      - "A rapier"
+      - "A scimitar"
+      - "A shortsword"
+      - "A trident"
+      - "A war pick"
+      - "A warhammer"
+      - "A whip"
+      - "A blowgun with (1d12 - 2) darts"
+      - "A hand crossbow with (1d12 - 2) bolts"
+      - "A heavy crossbow with (1d12 - 2) bolts"
+      - "A longbow with (1d12 - 2) arrows"
+      - "A net"
+      - "A scythe"
+      - "A staff"
+
+  # ----- Jewelry -----
+  - name: "jewelry"
+    weight: 2
+    types: has_gem
+    loot:
+      - "A ring"
+      - "A necklace"
+      - "A trinket"
+
+  # ----- Gems -----
+  - name: "gem"
+    weight: 2
+    loot:
+      - "An amethyst"
+      - "An aquamarine"
+      - "A coral gem"
+      - "A diamond"
+      - "An emerald"
+      - "A garnet gem"
+      - "A jacinth gem"
+      - "A jade"
+      - "A jet"
+      - "A moonstone"
+      - "An opal"
+      - "A perl"
+      - "A ruby"
+      - "A sapphire"
+      - "A topaz"
+      - "A quartz gem"
+
+  # ----- Spell Books -----
+  - name: "book"
+    weight: 1
+    loot:
+      - "A book of Abjuration"
+      - "A book of Conjuration"
+      - "A book of Divination"
+      - "A book of Enchantment"
+      - "A book of Evocation"
+      - "A book of Illusion"
+      - "A book of Necromancy"
+      - "A book of Transmutation"
