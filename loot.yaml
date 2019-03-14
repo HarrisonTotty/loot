@@ -10,15 +10,15 @@ has_gem:
 # Weapon/Armor Quality Rolls
 quality:
   - name: "shoddy quality"
-    weight: 6
+    weight: 9
   - name: "mundane quality"
-    weight: 7
+    weight: 12
   - name: "fine quality"
-    weight: 6
+    weight: 9
   - name: "remarkable quality"
-    weight: 5
+    weight: 7
   - name: "grand quality"
-    weight: 4
+    weight: 5
   - name: "superior quality"
     weight: 3
   - name: "imperial quality"
@@ -29,7 +29,7 @@ quality:
 loot:
   # ----- Miscellaneous Goods -----
   - name: "misc"
-    weight: 6
+    weight: 10
     loot:
       - "A pouch filled with 2d100 ball bearings"
       - "1d10 ft of string"
@@ -43,8 +43,9 @@ loot:
       - "1d4 flasks of oil"
       - name: "1d6 days of rations"
         weight: 10
-      - "A yinderbox"
-      - "A waterskin"
+      - "A Tinderbox"
+      - name: "A waterskin"
+        weight: 10
       - "1d20 feet of hempen rope"
       - "1d20 feet of chain"
       - "A set of fine clothes"
@@ -97,6 +98,8 @@ loot:
       - "1d8 pounds of cinnamon"
       - "1d8 pounds of pepper"
       - "1d8 pounds of garlic"
+      - "1d8 pounds of cumin"
+      - "1d8 pounds of corn"
       - "1d8 pounds of silver ore"
       - "1d10 large nails"
       - "An abacus"
@@ -123,10 +126,48 @@ loot:
       - "A merchant's scale"
       - "A spyglass"
       - "1d8 pounds of gold ore"
+      - "A pair of shears"
+      - "A shovel"
+      - "A nice pair of shoes"
+      - "A worn pair of sandles"
+      - "Some pocket lint"
+      - "A deer pelt"
+      - "A rabbit pelt"
+      - "A lock of hair"
+      - "A handheld mirror"
+      - "A pouch of berries"
+      - "A silver ewer"
+      - "A carved bone statuette"
+      - "A copper chalice"
+      - "A pair of engraved bone dice"
+      - "An embroidered silk handkercheif"
+      - "A gold locket with a painted portrait inside"
+      - "A carved ivory statuette"
+      - "A bronze crown"
+      - "A flask of oil"
+      - "A lute"
+      - "A mandolin"
+      - "A hurdy-gurdy"
+      - "A flute"
+      - "A snare drum"
+      - "A set of bongos"
+      - "A small gong"
+      - "A triangle (instrument)"
+      - "A walking stick"
+      - "A 1d20 foot wooden pole"
+      - "A goblet of wine"
+      - "1d4 gallons of milk"
+      - "1d4 gallons of honey"
+      - "1d4 gallons of mead"
+      - "A small barrel of salted beef"
+      - "A lock box"
+      - "A bird cage"
+      - "A cage of butterflies"
+      - "A honeycomb"
 
   # ----- Coins -----
   - name: "coins"
-    weight: 5
+    weight: 7
     loot:
       - name: "Gold Coins (1d4)"
         weight: 4
@@ -146,7 +187,7 @@ loot:
 
   # ----- Scrolls -----
   - name: "scroll"
-    weight: 3
+    weight: 5
     loot:
       - "A scroll of Amnesia"
       - "A scroll of Blinking"
@@ -171,7 +212,7 @@ loot:
 
   # ----- Potions -----
   - name: "potion"
-    weight: 4
+    weight: 6
     loot:
       - "A potion of Agility"
       - "A potion of Ambrosia"
@@ -196,7 +237,7 @@ loot:
 
   # ----- Armor -----
   - name: "armor"
-    weight: 3
+    weight: 5
     types: quality
     loot:
       - name: "A set of cloth armor"
@@ -224,12 +265,12 @@ loot:
 
   # ----- Weapons -----
   - name: "weapon"
-    weight: 4
+    weight: 6
     types: quality
     loot:
       - "A club"
       - name: "A dagger"
-        wight: 3
+        weight: 4
       - "A greatclub"
       - "A handaxe"
       - name: "A javelin"
@@ -242,9 +283,9 @@ loot:
       - name: "A spear"
         weight: 3
       - name: "A light crossbow with (1d12 - 2) bolts"
-        weight: 2
-      - name: "A shortbow with (1d12 - 2) arrows"
         weight: 3
+      - name: "A shortbow with (1d12 - 2) arrows"
+        weight: 4
       - "A sling with (1d12 - 2) bullets"
       - name: "A battleaxe"
         weight: 3
@@ -262,7 +303,7 @@ loot:
       - "A rapier"
       - "A scimitar"
       - name: "A shortsword"
-        weight: 3
+        weight: 4
       - "A trident"
       - "A war pick"
       - "A warhammer"
@@ -270,16 +311,16 @@ loot:
       - "A blowgun with (1d12 - 2) darts"
       - "A hand crossbow with (1d12 - 2) bolts"
       - name: "A heavy crossbow with (1d12 - 2) bolts"
-        weight: 2
-      - name: "A longbow with (1d12 - 2) arrows"
         weight: 3
+      - name: "A longbow with (1d12 - 2) arrows"
+        weight: 4
       - "A net"
       - "A scythe"
       - "A staff"
 
   # ----- Jewelry -----
   - name: "jewelry"
-    weight: 2
+    weight: 5
     types: has_gem
     loot:
       - "A ring"
@@ -288,7 +329,7 @@ loot:
 
   # ----- Gems -----
   - name: "gem"
-    weight: 2
+    weight: 4
     loot:
       - "An amethyst"
       - "An aquamarine"
@@ -309,7 +350,7 @@ loot:
 
   # ----- Spell Books -----
   - name: "book"
-    weight: 1
+    weight: 3
     loot:
       - "A book of Abjuration"
       - "A book of Conjuration"
@@ -319,3 +360,12 @@ loot:
       - "A book of Illusion"
       - "A book of Necromancy"
       - "A book of Transmutation"
+
+  # ----- Magic Items -----
+  - name: "magic"
+    weight: 1
+    loot:
+      - "A bag of holding"
+      - "A wand of magic detection"
+      - "A tome of resurrection"
+      - "A time crystal (1d4 hours)"
