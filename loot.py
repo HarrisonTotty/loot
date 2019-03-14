@@ -190,6 +190,8 @@ def main():
         else:
             print(get_loot(config))
 
+    print('')
+
 # --------------------------------------
 
 
