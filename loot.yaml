@@ -129,18 +129,19 @@ loot:
     weight: 5
     loot:
       - name: "Gold Coins (1d4)"
-        weight: 2
+        weight: 4
       - name: "Gold Coins (1d6 + 1)"
-        weight: 3
+        weight: 5
       - name: "Gold Coins (1d8 + 2)"
-        weight: 4
+        weight: 6
       - name: "Gold Coins (1d10 + 4)"
-        weight: 4
+        weight: 5
       - name: "Gold Coins (1d12 + 7)"
-        weight: 3
+        weight: 4
       - name: "Gold Coins (1d20 + 11)"
+        weight: 3
+      - name: "Gold Coins (2d20 + 16)"
         weight: 2
-      - "Gold Coins (2d20 + 16)"
       - "Gold Coins (3d20 + 22)"
 
   # ----- Scrolls -----
@@ -227,40 +228,51 @@ loot:
     types: quality
     loot:
       - "A club"
-      - "A dagger"
+      - name: "A dagger"
+        wight: 3
       - "A greatclub"
       - "A handaxe"
-      - "A javelin"
+      - name: "A javelin"
+        weight: 2
       - "A light hammer"
-      - "A mace"
+      - name: "A mace"
+        weight: 2
       - "A quarterstaff"
       - "A sickle"
-      - "A spear"
-      - "A light crossbow with (1d12 - 2) bolts"
-      - "A shortbow with (1d12 - 2) arrows"
+      - name: "A spear"
+        weight: 3
+      - name: "A light crossbow with (1d12 - 2) bolts"
+        weight: 2
+      - name: "A shortbow with (1d12 - 2) arrows"
+        weight: 3
       - "A sling with (1d12 - 2) bullets"
-      - "A battleaxe"
+      - name: "A battleaxe"
+        weight: 3
       - "A flail"
       - "A glaive"
       - "A greataxe"
       - "A greatsword"
       - "A halberd"
       - "A lance"
-      - "A longsword"
+      - name: "A longsword"
+        weight: 3
       - "A maul"
       - "A morningstar"
       - "A pike"
       - "A rapier"
       - "A scimitar"
-      - "A shortsword"
+      - name: "A shortsword"
+        weight: 3
       - "A trident"
       - "A war pick"
       - "A warhammer"
       - "A whip"
       - "A blowgun with (1d12 - 2) darts"
       - "A hand crossbow with (1d12 - 2) bolts"
-      - "A heavy crossbow with (1d12 - 2) bolts"
-      - "A longbow with (1d12 - 2) arrows"
+      - name: "A heavy crossbow with (1d12 - 2) bolts"
+        weight: 2
+      - name: "A longbow with (1d12 - 2) arrows"
+        weight: 3
       - "A net"
       - "A scythe"
       - "A staff"
