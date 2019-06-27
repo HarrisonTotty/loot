@@ -159,7 +159,7 @@ def main():
 
     try:
         with open(args.config_file, 'r') as f:
-            config = yaml.load(f.read())
+            config = yaml.safe_load(f.read())
     except Exception as e:
         sys.exit('Unable to load configuration file - ' + str(e))
 
